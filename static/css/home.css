@@ -1,0 +1,195 @@
+
+        body {
+            background-color: #f5f7fb;
+            padding: 0%;
+        }
+
+        nav {
+            position: relative;
+            z-index: 1000;
+            margin-bottom: 15px;
+        }
+
+        .page-title {
+            margin-top: 25px !important;
+        }
+
+        .page-title {
+            font-weight: 600;
+            color: #172554;
+        }
+
+        /* Main card */
+        .employee-card {
+            max-width: 850px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 35px 40px;
+            border-radius: 18px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+        }
+
+        /* Heading */
+        .form-title {
+            text-align: center;
+            font-weight: 600;
+            color: #172554;
+            margin-bottom: 5px;
+        }
+
+        .form-subtitle {
+            text-align: center;
+            color: #6b7280;
+            margin-bottom: 30px;
+        }
+
+        /* Labels */
+        .form-label {
+            font-weight: 600;
+            color: #374151;
+            margin-bottom: 8px;
+        }
+
+        /* Input boxes */
+        .custom-input {
+            height: 46px;
+            border: 1px solid #d5dbe3;
+            border-radius: 9px;
+            padding: 10px 13px;
+            font-size: 15px;
+            background-color: #ffffff;
+            transition: all 0.2s ease;
+        }
+
+        /* Input focus */
+        .custom-input:focus {
+            border-color: #0d6efd;
+            box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.12);
+        }
+
+        /* Space between fields */
+        .mb-3 {
+            margin-bottom: 22px !important;
+        }
+
+        /* Working section */
+        .working-section {
+            margin-top: 5px;
+        }
+
+        .working-box {
+            border: 1px solid #e1e5eb;
+            background-color: #f8fafc;
+            border-radius: 9px;
+            padding: 13px 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .working-box .form-check-input {
+            width: 19px;
+            height: 19px;
+            margin: 0;
+            cursor: pointer;
+        }
+
+        .working-label {
+            margin: 0;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        /* Submit button */
+        .submit-btn {
+            height: 48px;
+            border-radius: 9px;
+            font-size: 16px;
+            font-weight: 600;
+            border: none;
+            transition: all 0.2s ease;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 5px 12px rgba(13, 110, 253, 0.25);
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            .employee-card {
+                padding: 25px 20px;
+            }
+
+            .page-title {
+                font-size: 28px;
+            }
+        }
+    
+        body {
+            background-color: #f5f7fb;
+        }
+
+        .employee-form-card {
+            max-width: 550px;
+            margin: 50px auto;
+            background: white;
+            padding: 35px;
+            border-radius: 16px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .employee-form-card h3 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+
+        /* Each Django form field */
+        .employee-form-card form p {
+            margin-bottom: 18px;
+        }
+
+        /* Labels */
+        .employee-form-card form p label {
+            display: block;
+            margin-bottom: 7px;
+            font-weight: 500;
+            color: #333;
+        }
+
+        /* All input boxes */
+        .employee-form-card form p input,
+        .employee-form-card form p textarea,
+        .employee-form-card form p select {
+            display: block;
+            width: 100%;
+            height: 45px;
+            padding: 8px 12px;
+            border: 1px solid #ced4da;
+            border-radius: 8px;
+            box-sizing: border-box;
+            font-size: 15px;
+        }
+
+        /* Textarea */
+        .employee-form-card form p textarea {
+            height: 90px;
+            resize: vertical;
+        }
+
+        /* Focus effect */
+        .employee-form-card form p input:focus,
+        .employee-form-card form p textarea:focus,
+        .employee-form-card form p select:focus {
+            border-color: #0d6efd;
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.1);
+        }
+
+        /* Checkbox */
+        .employee-form-card form p input[type="checkbox"] {
+            width: auto;
+            height: auto;
+            display: inline-block;
+        }
