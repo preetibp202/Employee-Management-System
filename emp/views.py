@@ -8,7 +8,7 @@ from .models import Employee, Testimonals
 def emp_home(request):
     emps = Employee.objects.all()
 
-    return render(request, "Home.html", {"emps": emps})
+    return render(request, "home.html", {"emps": emps})
 
 
 def add_emp(request):
@@ -40,7 +40,7 @@ def add_emp(request):
 
         return redirect("/home/")
     form = EmployeeForm()
-    return render(request, "add_emp.Html", {"form": form})
+    return render(request, "add_emp.html", {"form": form})
 
 def delete_emp(request, id):
     emp = Employee.objects.get(id=id)
@@ -90,7 +90,7 @@ def Feedback(request):
 
             
             else:
-                 return render(request, "feedback.html",{"form": form}) # Redirect to a success page
+                 return render(request, "feedback.html", {"form": form}) # Redirect to a success page
     else:
         form=FeedbackForm()
 
