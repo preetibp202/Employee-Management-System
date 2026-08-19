@@ -40,7 +40,7 @@ def add_emp(request):
 
         return redirect("/home/")
     form = EmployeeForm()
-    return render(request, "add_emp.html",{"form":form})
+    return render(request, "add_emp.Html", {"form": form})
 
 def delete_emp(request, id):
     emp = Employee.objects.get(id=id)
