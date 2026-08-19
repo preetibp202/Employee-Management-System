@@ -8,7 +8,7 @@ from .models import Employee, Testimonals
 def emp_home(request):
     emps = Employee.objects.all()
 
-    return render(request, "Home.Html", {"emps": emps})
+    return render(request, "Home.html", {"emps": emps})
 
 
 def add_emp(request):
